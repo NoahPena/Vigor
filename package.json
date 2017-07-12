@@ -1,8 +1,15 @@
 {
   "name": "vigor",
   "version": "1.0.0",
-  "description": "Cross Platform IDE for Embedded Systems Development",
+  "description": "Cross Platform IDE for Embedded Systems",
   "main": "index.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "react": "^15.6.1",
+    "react-ace": "^5.1.0",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/NoahPena/Vigor/issues"
   },
-  "homepage": "https://github.com/NoahPena/Vigor#readme",
-  "dependencies": {
-    "babel": "^6.23.0"
-  }
+  "homepage": "https://github.com/NoahPena/Vigor#readme"
 }
