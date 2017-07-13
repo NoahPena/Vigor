@@ -2,15 +2,33 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-class App extends React.Component {
-  render () {
-    return (
-      <h1>Minimalistic Electron React Boilerplate Code :)</h1>
-    )
-  }
+//Ace Editor Stuff
+import AceEditor from 'react-ace';
+import 'brace/mode/java';
+import 'brace/theme/monokai';
+
+class App extends React.Component
+{
+  	render () 
+  	{
+    	return (
+
+	    	<div id='parentDiv'>
+		      	<h1>Minimalistic Electron React Boilerplate Code</h1>
+
+		    	<AceEditor
+			    mode="java"
+			    theme="monokai"
+			    name="UNIQUE_ID_OF_DIV"
+			    editorProps={{$blockScrolling: true}}
+			  	/>
+
+		  	</div>
+	    )
+	}
 }
 
 ReactDOM.render(<App/>,document.getElementById('app'))
