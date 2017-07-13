@@ -1,26 +1,33 @@
 {
-  "name": "vigor",
-  "version": "1.0.0",
-  "description": "Cross Platform IDE for Embedded Systems",
-  "main": "index.js",
-  "dependencies": {
-    "babel": "^6.23.0",
-    "react": "^15.6.1",
-    "react-ace": "^5.1.0",
-    "react-dom": "^15.6.1"
-  },
-  "devDependencies": {},
+  "name": "electron-react-quick-start",
+  "version": "0.0.1",
+  "description": "A minimal Electron React application",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"webpack --watch",
+    "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NoahPena/Vigor.git"
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "electron": "^1.4.1",
+    "webpack": "^1.13.3"
   },
-  "author": "Noah Peña",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NoahPena/Vigor/issues"
-  },
-  "homepage": "https://github.com/NoahPena/Vigor#readme"
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
 }
