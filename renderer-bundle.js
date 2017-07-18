@@ -77,6 +77,8 @@
 	//Ace Editor Stuff
 
 
+	//import '../public/css/renderer.css';
+
 	var App = function (_React$Component) {
 		_inherits(App, _React$Component);
 
@@ -94,13 +96,14 @@
 					{ id: 'parentDiv' },
 					_react2.default.createElement(
 						'h1',
-						null,
+						{ id: 'testTitle' },
 						'Minimalistic Electron React Boilerplate Code'
 					),
 					_react2.default.createElement(_reactAce2.default, {
 						mode: 'java',
 						theme: 'monokai',
-						name: 'UNIQUE_ID_OF_DIV',
+						name: 'mainCodingWindow',
+						id: 'mainCodingWindow',
 						editorProps: { $blockScrolling: true }
 					})
 				);

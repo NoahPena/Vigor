@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom';
 import AceEditor from 'react-ace';
 import 'brace/mode/java';
 import 'brace/theme/monokai';
+//import '../public/css/renderer.css';
 
 class App extends React.Component
 {
@@ -17,12 +18,13 @@ class App extends React.Component
     	return (
 
 	    	<div id='parentDiv'>
-		      	<h1>Minimalistic Electron React Boilerplate Code</h1>
+		      	<h1 id='testTitle'>Minimalistic Electron React Boilerplate Code</h1>
 
 		    	<AceEditor
 			    mode="java"
 			    theme="monokai"
-			    name="UNIQUE_ID_OF_DIV"
+			    name="mainCodingWindow"
+			    id="mainCodingWindow"
 			    editorProps={{$blockScrolling: true}}
 			  	/>
 
