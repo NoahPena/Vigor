@@ -15,9 +15,10 @@
   font-size: 1.4rem;
 }
 
-.ace_editor
+.vigorEditor
 {
-  position: absolute;
-  display: block;
-  /* top: 30%; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: 20%;
 }

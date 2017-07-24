@@ -60,9 +60,10 @@ app.on('ready', async () => {
   }
 
   mainWindow = new BrowserWindow({
-    show: false,
+    show: true,
     width: 1024,
-    height: 728
+    height: 728,
+    backgroundColor: '#232c39'
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
@@ -73,7 +74,7 @@ app.on('ready', async () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
     }
-    mainWindow.show();
+    // mainWindow.show();
     mainWindow.focus();
   });
 
