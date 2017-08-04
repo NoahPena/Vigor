@@ -2,6 +2,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
+import CodeEditor from './components/CodeEditor.js';
+
 class Main extends Component
 {
 
@@ -15,7 +17,8 @@ class Main extends Component
     {
         return (
             <div>
-                <h1>It works!</h1>
+                <h1 id="test">It works!</h1>
+                <CodeEditor id="editor" />
             </div>
         );
     }
