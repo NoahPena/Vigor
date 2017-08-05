@@ -4,7 +4,7 @@ import brace from 'brace';
 import React, { Component } from 'react';
 
 import 'brace/mode/c_cpp';
-import 'brace/mode/assembly_arm';
+// import 'brace/mode/assembly_arm';
 import 'brace/theme/monokai';
 
 
@@ -23,9 +23,9 @@ export default class CodeEditor extends Component
     {
         return (
             <AceEditor
-                mode="assembly_arm"
+                mode="c_cpp"
                 theme="monokai"
-                
+                enableLiveAutocompletion={true}
             />
         );
     }
