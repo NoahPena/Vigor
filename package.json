@@ -25,6 +25,8 @@
     "electron": "^1.6.12"
   },
   "dependencies": {
+    "ace-builds": "^1.2.8",
+    "brace": "^0.10.0",
     "electron-reload": "^1.2.1",
     "react": "^0.14.8",
     "react-ace": "^5.1.2",

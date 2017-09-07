@@ -17,7 +17,6 @@ class Main extends Component
     {
         return (
             <div>
-                <h1 id="test">It works!</h1>
                 <CodeEditor />
             </div>
         );
