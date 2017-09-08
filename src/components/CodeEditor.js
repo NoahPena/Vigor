@@ -1,11 +1,12 @@
-import AceEditor from 'react-ace';
+// import AceEditor from 'react-ace';
 import { render } from 'react-dom';
 import brace from 'brace';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import 'brace/mode/c_cpp';
-import 'ace-builds/src-noconflict/ace';
+import 'brace/ext/language_tools';
+
 // import 'brace/mode/assembly_arm';
 import 'brace/theme/monokai';
 
@@ -22,7 +23,15 @@ export default class CodeEditor extends Component
 
     componentDidMount()
     {
-        var editor = ReactDOM.findDOMNode(this);
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/c_cpp");
+        
+        editor.setOptions({
+            enableBasicAutocompletion: true,
+            enableSnippets: true,
+            enableLiveAutocompletion: true
+        });
 
         
     }
@@ -31,11 +40,7 @@ export default class CodeEditor extends Component
     render()
     {
         return (
-            <AceEditor
-                mode="c_cpp"
-                theme="monokai"
-                editorProps={{$enableBasicAutocompletion: true, $enableLiveAutocompletion: true, $blockScrolling: true}}
-            />
+            <div id="editor" />
         );
     }
 }

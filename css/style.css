@@ -27,9 +27,11 @@
 }
 
 
-#brace-editor
+#editor
 {
     position: absolute;
+    width: 50%;
+    height: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
