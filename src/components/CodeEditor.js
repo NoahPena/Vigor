@@ -4,10 +4,9 @@ import brace from 'brace';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import 'antd/dist/antd.css';
 // import 'antd/lib/tabs/style/css'
 
-import { Tabs } from 'antd';
+import { Tabs } from 'antd/lib/tabs';
 const TabPane = Tabs.TabPane;
 
 import 'brace/ext/language_tools';

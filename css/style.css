@@ -1,3 +1,5 @@
+/* @import '~antd/dist/antd.css'; */
+@import '../node_modules/antd/dist/antd.css';
 
 :root {
     deep-purple: '#673AB7';
